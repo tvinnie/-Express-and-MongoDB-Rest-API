@@ -34,6 +34,7 @@ function Register() {
         }
 
         dispatch(reset())
+        
     },[user, isError,isSuccess,message, navigate, dispatch])
     
 
@@ -60,6 +61,7 @@ function Register() {
             dispatch(register(userData))
         }
     }
+    
     if (isLoading) {
         return <Spinner />
     }
